@@ -1,2 +1,5 @@
 # FlatlandersStore_Ionic
-An port to the Ionic framework of the Flatlanders store from the Codeschool 'AngularJS' tutorial.
+A port to the Ionic framework of Codeschool's AngularJS tutorial; the Flatlanders' Store.
+
+Used cards to list the items, items are still hardcoded into the app.js.
+
