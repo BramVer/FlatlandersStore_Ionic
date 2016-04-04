@@ -26,14 +26,18 @@
 
   <body ng-controller="StoreController as store">
 
-    <ion-pane>
+    <ion-pane class="back-colour">
 
-      <ion-header-bar class="bar-dark">
-        <h1 class="title text-center">Flatlanders Gem Store</h1>
+      <ion-header-bar class="bar-assertive">
+        <h1 class="title">
+          <p class="text-center">
+            Flatlanders Gem Store
+          </p>
+        </h1>
       </ion-header-bar>
 
-      <ion-content class="has-header">
-
+      <ion-content class="has-header back-colour">
+      <div clas="back-colour"></div>
       <!-- Products --> 
       <div class="list card" ng-repeat="product in store.products">
 

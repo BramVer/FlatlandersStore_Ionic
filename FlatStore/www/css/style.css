@@ -2,3 +2,31 @@
 .thumbnail-row {
 	margin-left: 0px;
 }
+
+.title {
+	text-align: center;
+	margin: 0px;
+	font-size: 50px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #ef473a;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #ef473a
+}
+
+a {
+	color: #ef473a;
+}
+
+a:hover {
+	color: #ef473a;
+	}
