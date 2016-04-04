@@ -1,15 +1,26 @@
+
 <section>
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills row">
     <li ng-class="{ active:tab.isSet(1) }">
-      <a href ng-click="tab.setTab(1)">Description</a>
+      <a class="text-center" href ng-click="tab.setTab(1)">
+        <i class="icon ion-android-document"></i>
+      Description
+      </a>
     </li>
     <li ng-class="{ active:tab.isSet(2) }">
-      <a href ng-click="tab.setTab(2)">Specs</a>
+      <a class="text-center" href ng-click="tab.setTab(2)">
+        <i class="icon ion-gear-b"></i>
+        Specs
+      </a>
     </li>
     <li ng-class="{ active:tab.isSet(3) }">
-      <a href ng-click="tab.setTab(3)">Reviews</a>
+      <a class="text-center" href ng-click="tab.setTab(3)">
+        <i class="icon ion-android-chat"></i>
+        Reviews
+      </a>
     </li>
   </ul>
+
 
   <!--  Description Tab's Content  -->
   <div ng-show="tab.isSet(1)" ng-include="'views/product-description.html'">
