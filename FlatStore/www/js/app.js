@@ -1,24 +1,84 @@
-// Ionic Starter App
+(function() {
+  var app = angular.module('gemStore', ['ionic']);
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
-
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-      // for form inputs)
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-
-      // Don't remove this line unless you know what you are doing. It stops the viewport
-      // from snapping when text inputs are focused. Ionic handles this internally for
-      // a much nicer keyboard experience.
-      cordova.plugins.Keyboard.disableScroll(true);
-    }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
+  //CONTROLLERS
+  app.controller('StoreController', function() {
+    this.product = gems;
   });
-})
+
+  //VARIABLES
+  var gems = [
+    {
+      name: 'Azurite',
+      description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+      shine: 8,
+      price: 110.50,
+      rarity: 7,
+      color: '#CCC',
+      faces: 14,
+      images: [
+        "images/gem-02.gif",
+        "images/gem-05.gif",
+        "images/gem-09.gif"
+      ],
+      reviews: [{
+        stars: 5,
+        body: "I love this gem!",
+        author: "joe@example.org"
+      }, {
+        stars: 1,
+        body: "This gem sucks.",
+        author: "tim@example.org"
+      }]
+    }, {
+      name: 'Bloodstone',
+      description: "Origin of the Bloodstone is unknown, hence its low value. It has a very high shine and 12 sides, however.",
+      shine: 9,
+      price: 22.90,
+      rarity: 6,
+      color: '#EEE',
+      faces: 12,
+      images: [
+        "images/gem-01.gif",
+        "images/gem-03.gif",
+        "images/gem-04.gif"
+      ],
+      reviews: [{
+        stars: 3,
+        body: "I think this gem was just OK, could honestly use more shine, IMO.",
+        author: "JimmyDean@example.org"
+      }, {
+        stars: 4,
+        body: "Any gem with 12 faces is for me!",
+        author: "gemsRock@example.org"
+      }]
+      }, {
+        name: 'Zircon',
+        description: "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem.",
+        shine: 70,
+        price: 1100,
+        rarity: 2,
+        color: '#000',
+        faces: 6,
+        images: [
+          "images/gem-06.gif",
+          "images/gem-07.gif",
+          "images/gem-08.gif"
+        ],
+        reviews: [{
+          stars: 1,
+          body: "This gem is WAY too expensive for its rarity value.",
+          author: "turtleguyy@example.org"
+        }, {
+          stars: 1,
+          body: "BBW: High Shine != High Quality.",
+          author: "LouisW407@example.org"
+        }, {
+          stars: 1,
+          body: "Don't waste your rubles!",
+          author: "nat@example.org"
+        }]
+    }
+  ];
+
+})();
