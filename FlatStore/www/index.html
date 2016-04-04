@@ -35,9 +35,9 @@
       <ion-content class="has-header">
 
       <!-- Products --> 
-      <div class="list card">
+      <div class="list card" ng-repeat="product in store.products">
 
-       <div class="item" ng-repeat="product in store.products">
+       <div class="item">
           <h2>
             <b class="text-left">{{product.name}}</b>
             <em class="pull-right">{{product.price | currency}}</em>
@@ -46,10 +46,12 @@
         </div>
 
         <div class="item item-body">
-          <img class="full-image" src="delorean.jpg">
             
             <!-- Image gallery -->
             <product-gallery></product-gallery>
+
+            <!-- Product tabs -->
+            <product-tabs></product-tabs>
 
           </div>
 
