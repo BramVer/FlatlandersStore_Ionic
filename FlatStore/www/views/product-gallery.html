@@ -1,13 +1,11 @@
         <div ng-show="product.images.length">
           <div class="img-wrap text-center">
-            <img ng-src="{{product.images[gallery.current]}}"/>
+            <img ng-src="{{product.images[gallery.current].src}}"/>
           </div>
 
           <div class="row thumbnail thumbnail-row">
             <div ng-repeat="i in product.images">
-              <img class="col" ng-src="{{i}}"/>
+              <img ng-click="gallery.setCurrent(i)" class="col" ng-src="{{i.src}}"/>
             </div>
           </div>
-
-
         </div> 
