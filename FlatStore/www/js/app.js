@@ -34,8 +34,9 @@
       templateUrl: 'views/product-gallery.html',
       controller: function() {
         this.current = 0;
+
         this.setCurrent = function(imageNumber){
-          this.current = imageNumber || 0;
+          this.current = imageNumber.gem;
         };
       },
       controllerAs: 'gallery'
@@ -88,11 +89,19 @@
       rarity: 7,
       color: '#CCC',
       faces: 14,
-      images: [
-        "img/gem-02.gif",
-        "img/gem-05.gif",
-        "img/gem-09.gif"
-      ],
+      images: [ 
+      {
+        gem: "0",
+        src: "img/gem-02.gif"
+      },
+      {
+        gem: "1",
+        src: "img/gem-05.gif"
+      },
+      {
+        gem: "2",
+        src: "img/gem-09.gif"
+      }],
       reviews: [{
         stars: 5,
         body: "I love this gem!",
@@ -111,11 +120,19 @@
       rarity: 6,
       color: '#EEE',
       faces: 12,
-      images: [
-        "img/gem-01.gif",
-        "img/gem-03.gif",
-        "img/gem-04.gif"
-      ],
+      images: [ 
+      {
+        gem: "0",
+        src: "img/gem-01.gif"
+      },
+      {
+        gem: "1",
+        src: "img/gem-03.gif"
+      },
+      {
+        gem: "2",
+        src: "img/gem-04.gif"
+      }],
       reviews: [{
         stars: 3,
         body: "I think this gem was just OK, could honestly use more shine, IMO.",
@@ -134,11 +151,19 @@
         rarity: 2,
         color: '#000',
         faces: 6,
-        images: [
-          "img/gem-06.gif",
-          "img/gem-07.gif",
-          "img/gem-08.gif"
-        ],
+      images: [ 
+      {
+        gem: "0",
+        src: "img/gem-06.gif"
+      },
+      {
+        gem: "1",
+        src: "img/gem-07.gif"
+      },
+      {
+        gem: "2",
+        src: "img/gem-08.gif"
+      }],
         reviews: [{
           stars: 1,
           body: "This gem is WAY too expensive for its rarity value.",
